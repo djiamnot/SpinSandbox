@@ -1,0 +1,19 @@
+#N canvas 422 189 450 300 10;
+#X obj 30 241 OSCtx;
+#X msg 22 36 setAddress localhost 54324;
+#X obj 30 267 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 17191
+17191;
+#X msg 75 175 /SPIN/default/box setSpin 5 0 10;
+#X msg 95 201 /SPIN/default createNode grid GridNode;
+#X msg 103 220 /SPIN/default deleteNode grid;
+#X msg 204 53 /SPIN/default createNode box ShapeNode;
+#X msg 207 78 /SPIN/default/box setShape 2;
+#X msg 63 117 /SPIN/default/box setOrientation 30 0 40;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 6 0 0 0;
+#X connect 7 0 0 0;
+#X connect 8 0 0 0;
