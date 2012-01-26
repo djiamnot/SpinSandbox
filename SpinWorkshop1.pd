@@ -1,17 +1,19 @@
 #N canvas 240 129 725 420 10;
-#X obj 30 267 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 17956
+#X obj 30 367 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 17956
 17956;
-#X msg 76 175 /SPIN/default/box setSpin 5 0 10;
-#X msg 95 201 /SPIN/default createNode grid GridNode;
-#X msg 103 220 /SPIN/default deleteNode grid;
+#X msg 76 275 /SPIN/default/box setSpin 5 0 10;
+#X msg 95 301 /SPIN/default createNode grid GridNode;
+#X msg 103 320 /SPIN/default deleteNode grid;
 #X msg 204 53 /SPIN/default createNode box ShapeNode;
 #X msg 207 78 /SPIN/default/box setShape 2;
 #X msg 63 117 /SPIN/default/box setOrientation 30 0 40;
 #X msg 23 35 setAddress 10.10.10.75 54324;
-#X obj 29 241 OSCtx;
-#X msg 134 243 /SPIN/default/box setStateSetFromFile ~/Pictures/3d-gnu-head.png
+#X obj 29 341 OSCtx;
+#X msg 134 343 /SPIN/default/box setStateSetFromFile ~/Pictures/3d-gnu-head.png
 ;
-#X text 387 242 map a local image to the cube;
+#X text 387 342 map a local image to the cube;
+#X msg 81 144 /SPIN/default/box setTranslation 0 0 0;
+#X msg 91 185 /SPIN/default/box setScale 2 2 2;
 #X connect 1 0 8 0;
 #X connect 2 0 8 0;
 #X connect 3 0 8 0;
@@ -21,3 +23,5 @@
 #X connect 7 0 8 0;
 #X connect 8 0 0 0;
 #X connect 9 0 8 0;
+#X connect 11 0 8 0;
+#X connect 12 0 8 0;
